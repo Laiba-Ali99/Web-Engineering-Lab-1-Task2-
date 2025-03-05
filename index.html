@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blog Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E1E2E;
+            color: #E0E0E0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #282A36;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .gallery .image-text {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-align: left;
+        }
+        .gallery .image-text.reverse {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        .gallery img {
+            border-radius: 8px;
+        }
+        section {
+            margin-top: 40px;
+        }
+        figure {
+            text-align: center;
+            background: #3B3F51;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #3B3F51;
+            color: #E0E0E0;
+        }
+        th, td {
+            border: 1px solid #4A4E69;
+            padding: 10px;
+            text-align: center;
+        }
+        .comment-section {
+            margin-top: 40px;
+            background: #3B3F51;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background: #44475A;
+            color: #E0E0E0;
+        }
+        h1, h2 {
+            color: #8BE9FD;
+        }
+        button {
+            background: #50FA7B;
+            color: #282A36;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #69FF94;
+        }
+        iframe {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <h1>The Future of AI in Everyday Life</h1>
+            <img src="ai.jpg" alt="AI in Smart Homes"  width="850">
+            <time datetime="2025-03-02">Published on March 2, 2025</time>
+            <p>As we move deeper into the digital age, artificial intelligence is becoming a silent partner in our daily lives, revolutionizing everything from how we manage our homes to how we work. Imagine waking up to a home that's already adjusted to your preferred temperature, your breakfast being prepared based on nutritional goals, and a personalized playlist curated to boost your mood for the day. AI isn't just for tech enthusiasts anymore—it's becoming an integral part of our routines, seamlessly blending into everyday tasks. But the possibilities don’t end there. In the near future, AI could take over even more sophisticated roles, like diagnosing health issues through wearable devices, helping us make smarter financial decisions, or even guiding us in self-improvement with personalized life coaching. The question isn’t whether AI will become a part of our lives—it already has. The question is, how will it change the way we live, work, and connect with the world around us?</p>
+        </article>
+
+        <section class="gallery">
+            <div class="image-text" style="display: flex; align-items: center; justify-content: flex-start; gap: 20px;">
+                <figure style="margin: 0;">
+                    <img src="smart-home.jpg" alt="AI in Smart Homes" height="250" width="350">
+                    <figcaption>AI in Smart Homes</figcaption>
+                </figure>
+                <p style="flex: 2; text-align: justify;">AI is transforming smart homes from mere automated systems into intuitive, responsive environments that adapt to our needs. Through advanced sensors, machine learning algorithms, and voice recognition, AI-powered devices like smart thermostats, lighting, and security systems can learn user preferences over time and adjust accordingly. For example, a smart thermostat can optimize energy usage by learning your routine, adjusting temperatures based on when you’re home or away, and even predicting your comfort needs. AI-enabled security cameras can distinguish between familiar faces and potential intruders, alerting homeowners to unusual activity. Beyond convenience, these systems enhance safety, energy efficiency, and overall comfort, turning a house into a truly intelligent, personalized living space. As AI continues to evolve, the future of smart homes looks even more interconnected, making everyday life smoother and more efficient.</p>
+            </div>
+            <div class="image-text" style="display: flex; align-items: center; justify-content: flex-start; gap: 20px; flex-direction: row-reverse;">
+                <figure style="margin: 0;">
+                    <img src="healthcare.jpg" alt="AI in Healthcare" height="250" width="350">
+                    <figcaption>AI in Healthcare</figcaption>
+                </figure>
+                <p style="flex: 2; text-align: justify;">AI is revolutionizing healthcare by making diagnoses faster, more accurate, and accessible to a broader range of people. Machine learning algorithms can analyze medical data—such as images, patient records, and genetic information—far more quickly than humans, detecting conditions like cancer, heart disease, and neurological disorders with remarkable precision. AI-powered tools, like predictive analytics, can even identify at-risk patients before symptoms appear, enabling preventative care and personalized treatment plans. Virtual health assistants, powered by AI, are improving patient engagement by providing real-time advice and reminders for medication or lifestyle changes. Additionally, robotic surgeries and AI-driven diagnostic tools are reducing human error and improving outcomes. As AI continues to evolve, it promises to democratize healthcare, making high-quality treatment more accessible while enhancing the efficiency and capabilities of medical professionals.</p>
+            </div>
+        </section>
+        
+
+        <section>
+            <h2>Podcast: AI’s Role in the Future</h2>
+            <audio controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <p></p>
+        <section>
+            <h2>Artificial intelligence in Daily Life</h2>
+            <iframe width="750" height="315" src="https://www.youtube.com/embed/QZGMrRuhVhw" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>AI Applications in Different Fields</h2>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>AI Application</th>
+                </tr>
+                <tr>
+                    <td>Healthcare</td>
+                    <td>Medical Diagnosis and Virtual Assistants</td>
+                </tr>
+                <tr>
+                    <td>Finance</td>
+                    <td>Fraud Detection and Automated Trading</td>
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td>Autonomous Vehicles and Traffic Management</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="comment-section">
+            <h2>Leave a Comment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
+
